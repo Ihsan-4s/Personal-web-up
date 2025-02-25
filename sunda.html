@@ -1,61 +1,220 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Industy</title>
+    <link rel="stylesheet" href="sunda.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
+
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        h1 {
+            text-align: center;
+        }
+        .industri {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .industri img {
+            width: 380px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .ind-info {
+            max-width: 600px;
+        }
+        .ind-info h2 {
+            margin: 0 0 10px;
+            font-size: 22px;
+        }
+
+        @media (max-width: 786px) {
+            .industri {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .industri img {
+                margin-bottom: 10px;
+                margin-right: 0;
+            }
+            .ind-info {
+                max-width: 90%;
+            }
+        }
+    </style>
 </head>
 <body>
+    <div class="overlay" id="overlay"></div>
     <header>
-        <div class="logo"><a href="#home">Ihsan's Portofolio</a></div>
+        <div class="logo"><a href="#" id="toggleSidebar">Sidebar</a></div>
         <nav>
             <ul>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Portofolio.html">Portofolio</a></li>
-                <li><a href="Sumber.html">Sumber Belajar</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Project.html">Back</a></li>
             </ul>
         </nav>
+        <div id="sidebar" class="sidebar">
+            <a href="#" class="close-btn" onclick="closeSidebar()">X</a>
+            <ul>
+                <li><a href="#sejarah">Sejarah</a></li>
+                <li><a href="#lokasi">Lokasi</a></li>
+                <li><a href="#struktur">Struktur</a></li>
+                <li><a href="#pemimpin">Pemimpin</a></li>
+                <li><a href="#imah">Imah</a></li>
+                <li><a href="#bangunan">Jumlah Bangunan</a></li>
+                <li><a href="#aturan">Aturan</a></li>
+                <li><a href="#upacara">Upacara</a></li>
+                <li><a href="#kapercayaan">Kapercayaan</a></li>
+                <li><a href="#tradisi">Tradisi</a></li>
+            </ul>
+        </div>
     </header>
+    <div class="container">
+        <h1>KAMPUNG KUTA</h1>
+        <div class="industri" data-aos="fade-up">
+            <img src="sunda/kutasejsing.jpg" id="sejarah">
+            <div class="ind-info">
+                <h2 >Sejarah Singkat Kampung Adat Kuta</h2>
+                <p>Kampung Adat Kuta perenahna di Kabupatén Ciamis, Jawa Barat. Kampung ieu mangrupa salah sahiji kampung adat nu masih ngajaga kabudayaan Sunda asli. Dumasar kana sajarah, Kampung Kuta geus aya ti jaman baheula, tur dianggap salaku tempat anu sakral jeung dilestarikeun ku masarakat satempat. Kampung ieu kasohor ku ayana aturan adat anu ketat, salah sahijina nyaéta larangan ngawangun imah tina témbok atawa bahan modern, sahingga sadaya imah didamel tina kai jeung bilik.</p>
+            </div>
+        </div>
+        <div class="industri"  data-aos="fade-up">
+            <div class="ind-info">
+                <h2 id="lokasi">Lokasi Kampung Adat Kuta</h2>
+                <p>Kampung Adat Kuta perenahna di Dusun Kuta, Désa Karangpaningal, Kecamatan Tambaksari, Kabupaten Ciamis, Jawa Barat. Kampung ieu ayana di lebak nu dikurilingan ku pasir-pasir, sahingga masarakatna masih ngajaga lingkungan alam kalayan hadé.
+                </p>
+            </div>
+            <img src="sunda/013366500_1732948968-ciri-khas-kampung-kuta.jpg" >
+        </div>
+        <div class="industri"  data-aos="fade-up">
+            <img src="sunda/struktur.png" id="struktur">
+            <div class="ind-info">
+                <h2 >Struktur Organisasi Kampung Adat</h2>
+                <p>Struktur organisasi Kampung Adat Kuta umumna masih dumasar kana sistem adat nu diwariskeun ti karuhun.</p>
+            </div>
+        </div>
+        <div class="industri" data-aos="fade-up">
+            <div class="ind-info">
+                <h2 id="pemimpin">Pemimpin Kampung Adat Kuta</h2>
+                <ul>
+                    <li><strong>Kuncen</strong> Ketua adat nu ngajaga tur ngurus adat istiadat.</li>
+                    <li><strong>Lebé </strong> Ngurus urusan agama Islam jeung upacara ibadah.</li>
+                    <li><strong>Punduh </strong>Ngatur kahirupan sosial warga</li>
+                    <li><strong>Kokolot Kampung </strong>Sesepuh nu jadi panutan adat.</li>
+                    <li><strong>Juru Basa</strong>Juru bicara dina acara adat.</li>
+                </ul>
+            </div>
+            <img src="sunda/Pemimpin.jpg" alt="">
+        </div>
+        <div class="industri"  data-aos="fade-up">
+            <img src="sunda/rumah.jpg" alt="" id="imah">
+            <div class="ind-info">
+                <h2 >Ngaran Imah Di Kampung Adat Kuta</h2>
+                <p> Imah panggung di Kampung Adat Kuta dijieun tina bahan alami saperti kai, bilik, jeung hateup kiray atawa ijuk supaya hawa tetep tiis. Lanténa jangkung pikeun ngajaga tina kalembaban jeung sasatoan. Aya aturan adat nu nyaram ngagunakeun témbok semen atawa bata. Wangunanana basajan tapi kuat tur nyaman. Masarakat Kampung Kuta masih ngajaga aturan adat ieu pikeun melestarikan warisan budaya Sunda.</p>
+            </div>
+        </div>
+        <div class="industri"  data-aos="fade-up">
+            <div class="ind-info">
+                <h2 id="bangunan">Jumlah Bangunan Di Kampung Adat Kuta</h2>
+                <p> Numutkeun data ti taun 2018, di Kampung Adat Kuta aya 117 imah panggung anu dihuni ku 275 jiwa.  Imah-imah ieu dijieun tina bahan alami saperti kai jeung bilik (anyaman awi), sarta make hateup tina kiray atawa ijuk. Pangwangunan imah make témbok atawa genténg dianggap pamali (tabu) di kampung ieu.</p>
+            </div>
+            <img src="sunda/jumim.jpg" alt="">
+        </div>
+        <div class="industri">
+            <img src="sunda/aturan.jpg" alt="" id="aturan"  data-aos="fade-up">
+            <div class="ind-info">
+                <h2 ">Aturan Jeung Kapamalian Di Kampung Adat Kuta</h2>
+                <p> Di Kampung Adat Kuta, aya sababaraha aturan adat (kapamalian) anu kudu dipatuh, diantarana: imah teu meunang maké témbok, hateup kudu tina bahan alami, teu meunang nebang tatangkalan di leuweung larangan, teu meunang ngomong kasar di tempat sakral, sarta teu meunang mawa atawa ngajadikeun tana. Aturan ieu dijaga pikeun ngajaga kasakralan kampung jeung harmoni masarakat.</p>
+            </div>
+        </div>
+        <div class="industri"  data-aos="fade-up">
+            <div class="ind-info">
+                <h2 id="upacara">Upacara Upacara Adat di Kampung Kuta</h2>
+                <p>Désa Kuta anu unik dina hal anu teguh taat kana adat istiadat, arsitektur imah panggung has, jeung ayana leuweung suci Leuweung Gede. Salian ti éta, ieu désa ogé kasohor ku rupa-rupa adat atawa tabu anu masih dipiara sacara ketat ku masarakatna.</p>
+            </div>
+            <img src="sunda/the-tradional-events.jpg" alt="">
+        </div>
+        <div class="industri">
+            <img src="sunda/ritual-kamera-2.jpg" alt="" id="kapercayaan"  data-aos="fade-up">
+            <div class="ind-info">
+                <h2 >Kapercayaan atawa Agama di Kampung Adat Kuta</h2>
+                <p>Désa Kuta mangrupa salah sahiji kampung adat di Jawa Barat anu masih nganut kapercayaan ka karuhunna anu mangrupa warisan ti karuhun. Sakumna masarakat Kampung Adat Kuta ngagem agama Islam.</p>
+            </div>
+        </div>
+        <div class="industri" data-aos="fade-up">
+            <div class="ind-info">
+                <h2 id="tradisi">Tradisi di Kampung Adat Kuta</h2>
+                <p>Tradisi 'Nyuguh' mangrupa bagian integral tina budaya Kampung Adat Kuta. Saban taun masarakat kampung adat ngayakeun ritual ieu minangka wujud rasa sukur ka Gusti Nu Maha Suci. Upacara ieu nandakeun kahontalna h	asil panén jeung kalancaran kahirupan anu geus dirasakeun ku masarakat.</p>
+            </div>
+            <img src="sunda/tradisi-.jpg" alt="">
+        </div>
+    </div>
 
-    <section id="lokasi">
-        <h2>Lokasi</h2>
-        <p>Tradisi ini masih dilakukan di Bandung sebagai upaya menjaga sumber mata air.</p>
-    </section>
 
-    <section id="tujuan">
-        <h2>Tujuan</h2>
-        <p>Festival budaya lokal untuk mengajak masyarakat dalam pelestarian lingkungan.</p>
-    </section>
 
-    <section id="makna">
-        <h2>Makna</h2>
-        <p>Ngalokat cai menggambarkan rasa syukur dan penghargaan terhadap air sebagai unsur penting kehidupan.</p>
-    </section>
+    <footer>
+        <div class="Footer">
+            <div>
+                <h3>Contact</h3>
+                <ul class="Fcont">
+                    <li><span>📞</span> 0812-8330-9884 — (Ihsan)</li>
+                    <li><span>✉️</span> ihsanmaulana86821@gmail.com</li>
+                    <li><span>📍</span> Indonesia</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Social</h3>
+                <div class="Fsoc">
+                    <a href="https://www.instagram.com/isannky24/">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ihsan-maulana-rizky-895509330/">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@isannnnxg">
+                        <i class='bx bxl-tiktok'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="Fcop">
+            <p>Copyright © 2024 Ihsan Maulana Rizky</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("toggleSidebar").addEventListener("click", function () {
+    document.getElementById("sidebar").style.left = "0";
+    document.getElementById("overlay").style.display = "block"; // Tampilkan overlay
+});
 
-    <section id="cara">
-        <h2>Cara Pelaksanaan</h2>
-        <ul>
-            <li>Memilih lokasi sumber air yang akan dipelihara</li>
-            <li>Melakukan doa atau ritual khusus</li>
-            <li>Menanam pohon di sekitar sumber air</li>
-            <li>Membersihkan area dari sampah</li>
-        </ul>
-    </section>
+// Menutup sidebar jika klik di luar sidebar
+document.getElementById("overlay").addEventListener("click", function () {
+    closeSidebar();
+});
 
-    <section id="alat">
-        <h2>Alat & Bahan</h2>
-        <ul>
-            <li>Alat kebersihan (sapu, pengki, cangkul)</li>
-            <li>Bibit pohon (kelapa, pohon dadap)</li>
-            <li>Sesajen (bunga, dupa)</li>
-            <li>Pakaian adat</li>
-        </ul>
-    </section>
-
-    <section id="waktu">
-        <h2>Waktu Pelaksanaan</h2>
-        <p>Biasanya dilakukan pada waktu-waktu tertentu yang dianggap sakral dalam kalender Sunda.</p>
-    </section>
+function closeSidebar() {
+    document.getElementById("sidebar").style.left = "-250px";
+    document.getElementById("overlay").style.display = "none"; // Sembunyikan overlay
+}
+AOS.init();
+    </script>
     
 </body>
 </html>
